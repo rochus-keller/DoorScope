@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/DoorScope">
+        <file>Images/Scope16.png</file>
+        <file>Images/Scope32.png</file>
+        <file>Images/Scope48.png</file>
+        <file>Images/Scope64.png</file>
+        <file>Images/Scope128.png</file>
+        <file>Images/outlink.png</file>
+        <file>Images/inlink.png</file>
+        <file>Images/zahnrad.png</file>
+        <file>Images/stift.png</file>
+        <file>Images/reject.png</file>
+        <file>Images/accept.png</file>
+        <file>Images/acceptwc.png</file>
+        <file>Images/warning.png</file>
+        <file>Images/comment.png</file>
+        <file>Images/watch.png</file>
+        <file>Images/document.png</file>
+        <file>Images/folder.png</file>
+        <file>Images/object.png</file>
+        <file>Images/attribute.png</file>
+        <file>Images/urgent.png</file>
+        <file>Images/needtohave.png</file>
+        <file>Images/nicetohave.png</file>
+        <file>Images/img_placeholder.png</file>
+        <file>Images/next.png</file>
+        <file>Images/close.png</file>
+        <file>Images/prev.png</file>
+        <file>Images/find.png</file>
+        <file>Images/wrap.png</file>
+        <file>Images/notfound.png</file>
+        <file>Images/filtered.png</file>
+        <file>Images/funnel_arrow.png</file>
+        <file>Images/funnel_minus.png</file>
+        <file>Images/funnel_pencil.png</file>
+        <file>Images/funnel_plus.png</file>
+        <file>Images/funnel_import.png</file>
+    </qresource>
+</RCC>
