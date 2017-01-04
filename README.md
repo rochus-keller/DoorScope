@@ -2,7 +2,7 @@
 DoorScope is a software application which can be used in the specification review process. Specifications can be exported from IBM DOORS® and viewed with links, object attributes and change history (including tables, images and richtext). Objects can be annotated and marked with their review status. There is also a fulltext search and scripting facility. DoorScope is a single executable and runs natively on Windows without installation. DoorScope is freeware. See http://doorscope.ch/ for more information.
 
 ## Download and Installation
-DoorScope is deployed as a compressed single-file executable. See http://http://doorscope.ch/. The executable is built from the source code accessible here. Of course you can build the executable yourself if you want (see below for instructions). Since DoorScope is a single executable, it can just be downloaded and unpacked. No installation is necessary. You therefore need no special privileges to run DoorScope on your machine. 
+DoorScope is deployed as a compressed single-file executable. See http://doorscope.ch/. The executable is built from the source code accessible here. Of course you can build the executable yourself if you want (see below for instructions). Since DoorScope is a single executable, it can just be downloaded and unpacked. No installation is necessary. You therefore need no special privileges to run DoorScope on your machine. 
 
 ## How to Build DoorScope
 
@@ -16,6 +16,7 @@ The source tree also includes documentation and build instructions.
 If you intend to do static builds on Windows without dependency on C++ runtime libs and manifest complications, follow the recommendations in this post: http://www.archivum.info/qt-interest@trolltech.com/2007-02/00039/Fed-up-with-Windows-runtime-DLLs-and-manifest-files-Here's-a-solution.html
 
 Here is the summary on how to do implement Qt Win32 static builds:
+
 1. in Qt/mkspecs/win32-msvc2005/qmake.conf replace MD with MT and MDd with MTd
 2. in Qt/mkspecs/features clear the content of the two embed_manifest_*.prf files (but don't delete the files)
 3. run configure -release -static -platform win32-msvc2005
@@ -24,7 +25,7 @@ To use Qt with DoorScope you have to make the following modification: QTreeView:
     virtual int indexRowSizeHint(const QModelIndex &index) const;
 
 ### Build Steps
-Follow these steps if you inted to build CARA yourself (don't forget to meet the preconditions before you start):
+Follow these steps if you inted to build DoorScope yourself (don't forget to meet the preconditions before you start):
 
 1. Create a directory; let's call it BUILD_DIR
 2. Download the DoorScope source code from https://github.com/rochus-keller/DoorScope/archive/github.zip and unpack it to the BUILD_DIR.
