@@ -1,8 +1,8 @@
 # DoorScope
-DoorScope is a software application which can be used in the specification review process. Specifications can be exported from IBM DOORS® and viewed with links, object attributes and change history (including tables, images and richtext). Objects can be annotated and marked with their review status. There is also a fulltext search and scripting facility. DoorScope is a single executable and runs natively on Windows without installation. DoorScope is freeware. See http://doorscope.ch/ for more information.
+DoorScope is a software application which can be used in the specification review process. Specifications can be exported from IBM DOORS® and viewed with links, object attributes and change history (including tables, images and richtext). Objects can be annotated and marked with their review status. There is also a fulltext search and scripting facility. DoorScope is a single executable and runs natively on Windows without installation. DoorScope is open-source under GPL. 
 
 ## Download and Installation
-DoorScope is deployed as a compressed single-file executable. See http://doorscope.ch/. The executable is built from the source code accessible here. Of course you can build the executable yourself if you want (see below for instructions). Since DoorScope is a single executable, it can just be downloaded and unpacked. No installation is necessary. You therefore need no special privileges to run DoorScope on your machine. 
+DoorScope is deployed as a compressed single-file executable. See https://github.com/DoorScope#downloads. The executable is built from the source code accessible here. Of course you can build the executable yourself if you want (see below for instructions). Since DoorScope is a single executable, it can just be downloaded and unpacked. No installation is necessary. You therefore need no special privileges to run DoorScope on your machine. 
 
 ## How to Build DoorScope
 
@@ -13,7 +13,7 @@ You can download the Qt 4.4.3 source tree from here: http://download.qt.io/archi
 
 The source tree also includes documentation and build instructions.
 
-If you intend to do static builds on Windows without dependency on C++ runtime libs and manifest complications, follow the recommendations in this post: http://www.archivum.info/qt-interest@trolltech.com/2007-02/00039/Fed-up-with-Windows-runtime-DLLs-and-manifest-files-Here's-a-solution.html
+If you intend to do static builds on Windows without dependency on C++ runtime libs and manifest complications, follow the recommendations in this post: http://www.archivum.info/qt-interest@trolltech.com/2007-02/00039/Fed-up-with-Windows-runtime-DLLs-and-manifest-files-Here's-a-solution.html (link is dead)
 
 Here is the summary on how to do implement Qt Win32 static builds:
 
@@ -32,13 +32,12 @@ Follow these steps if you inted to build DoorScope yourself (don't forget to mee
 3. Download the Stream source code from https://github.com/rochus-keller/Stream/archive/github.zip and unpack it to the BUILD_DIR; rename "Stream-github" to "Stream".
 4. Download the Sdb source code from https://github.com/rochus-keller/Sdb/archive/github.zip and unpack it to the BUILD_DIR; rename "Sdb-github" to "Sdb".
 5. Create the subdirectory "Lua" in BUILD_DIR; download the modified Lua source from http://cara.nmr-software.org/download/Lua_5.1.5_CARA_modified.tar.gz and unpack it to the subdirectory.
-6. Create the subdirectory "Sqlite3" in BUILD_DIR; download the Sqlite source from http://doorscope.ch/download/Sqlite3.tar.gz and unpack it to the subdirectory.
+6. Create the subdirectory "Sqlite3" in BUILD_DIR; download the Sqlite source from http://software.rochus-keller.ch/DoorScope/Sqlite3.tar.gz and unpack it to the subdirectory.
 7. Goto the BUILD_DIR/DoorScope subdirectory and execute `QTDIR/bin/qmake DoorScope.pro` (see the Qt documentation concerning QTDIR).
 8. Run make; after a couple of minutes you will find the executable in the tmp subdirectory.
 
 Alternatively you can open DoorScope.pro using QtCreator and build it there.
 
 ## Support
-If you need support or would like to post issues or feature requests please use our forum: http://doorscope.ch/forum/
-
+If you need support or would like to post issues or feature requests please post an issue on GitHub.
 
